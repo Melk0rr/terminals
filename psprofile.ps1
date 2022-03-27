@@ -1,3 +1,6 @@
+oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\melkor.omp.json | Invoke-Expression
+Import-Module -Name Terminal-Icons
+
 $logo0 = '888b     d888          888 888'
 $logo1 = '8888b   d8888          888 888'
 $logo2 = '88888b.d88888          888 888'

@@ -49,5 +49,5 @@ Write-Host "    Shell" -ForegroundColor Cyan -NoNewline
 Write-Host ": Powershell $psversion" -ForegroundColor White
 Write-Host "                       ````````''*::cll" -ForegroundColor Cyan -NoNewline
 Write-Host "    Uptime" -ForegroundColor Cyan -NoNewline
-Write-Host ": $($uptime.Days) days, $($uptime.Hours) hours, $($uptime.Minutes) minutes,"
+Write-Host ": $($uptime.Days) days, $($uptime.Hours) hours, $($uptime.Minutes) minutes"
 Write-Host "                                 ````" -ForegroundColor Cyan

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "diamond",
+          "foreground": "#fff",
+          "background": "#461466",
+          "properties": {
+            "windows": "\uf17a",
+            "debian": "\uf306"
+          }
+        },
+        {
+          "type": "session",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "\uE0B0",
+          "foreground": "#fff",
+          "background": "#461466",
+          "foreground_templates": [
+            "{{if .Root}}#ff385d{{end}}"
+          ],
+          "properties": {
+            "template": "{{if .Root}}{{ .UserName }}💀{{ .ComputerName }} {{else}}{{ .UserName }}@{{ .ComputerName }} {{end}}"
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "transparent",
+          "background": "#00a3c9",
+          "properties": {
+            "style": "full",
+            "home_icon": "\uf7db ",
+            "folder_separator_icon": " \uE0B1 "
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#193549",
+          "background": "#e0da1f",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#ff9248{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
+            "{{ if gt .Ahead 0 }}#89d1dc{{ end }}",
+            "{{ if gt .Behind 0 }}#f17c37{{ end }}"
+          ],
+          "properties": {
+            "fetch_status": true,
+            "fetch_stash_count": true,
+            "template": "{{ .HEAD }}{{ if .Staging.Changed }} \uF046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}"
+          }
+        },
+        {
+            "type": "exit",
+            "style": "powerline",
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#fff",
+            "background": "#910000",
+            "properties": {
+                "prefix": "<transparent> \uF12A</> ",
+                "template": "{{ .Text }}"
+            }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "#fff",
+          "properties": {
+            "always_enabled": true,
+            "prefix": " 羽 ",
+            "postfix": ""
+          }
+        },
+        {
+          "type": "python",
+          "style": "diamond",
+          "trailing_diamond": "",
+          "leading_diamond": "\uE0B2",
+          "foreground": "#003544",
+          "background": "#0087D8",
+          "properties": {
+            "prefix": " \uE235 ",
+            "display_mode": "context",
+            "fetch_virtual_env": true,
+            "template": "{{ .Venv }}"
+          }
+        },
+        {
+          "type": "time",
+          "style": "diamond",
+          "trailing_diamond": "\uE0B4 ",
+          "leading_diamond": "",
+          "foreground": "#fff",
+          "background": "#ec008c",
+          "properties": {
+            "prefix": " \uf64f "
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "foreground_templates": [
+              "{{ if gt .Code 0 }}#ff0000{{ end }}"
+          ],
+          "properties": {
+              "template": "\u276F",
+              "prefix": "",
+              "always_enabled": true
+          }
+      }
+      ]
+    }
+  ]
+}

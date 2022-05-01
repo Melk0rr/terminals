@@ -17,7 +17,7 @@
 - Windows: just select all .ttf files, right-click and select "install font"
 - Linux: Unzip files to `/usr/share/fonts`
 
-2. Change Terminal or Software font to "MesloLGL Nerd Font"
+2. Change Terminal or Software font to **MesloLGL Nerd Font**
 
 ### Linux
 1. Download Oh-my-posh:

@@ -34,5 +34,6 @@ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.json
 rm ~/.poshthemes/themes.zip
 `
+
 3. Download theme from this page to `~/.poshthemes`
 4. Download .bashrc or .zshrc

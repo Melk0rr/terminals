@@ -85,6 +85,10 @@
           "type": "executiontime"
         },
         {
+          "type": "python",
+          "style": "diamond",
+          "trailing_diamond": "",
+          "leading_diamond": "\uE0B2",
           "background": "#0087D8",
           "foreground": "#003544",
           "invert_powerline": true,
@@ -93,9 +97,7 @@
             "display_mode": "context",
             "fetch_virtual_env": true,
             "template": " \ue235 {{ .Venv }} "
-          },
-          "style": "powerline",
-          "type": "python"
+          }
         },
         {
           "background": "#fecb00",

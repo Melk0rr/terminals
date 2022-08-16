@@ -1,14 +1,14 @@
 oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\melkor.omp.json | Invoke-Expression
 Import-Module -Name Terminal-Icons
 
-$logo0 = '888b     d888          888 888'
-$logo1 = '8888b   d8888          888 888'
-$logo2 = '88888b.d88888          888 888'
-$logo3 = '888Y88888P888  .d88b.  888 888  888  .d88b.  888d888'
-$logo4 = '888 Y888P 888 d8P  Y8b 888 888 .88P d88""88b 888P"'
-$logo5 = '888  Y8P  888 88888888 888 888888K  888  888 888'
-$logo6 = '888   "   888 Y8b.     888 888 "88b Y88..88P 888'
-$logo7 = '888       888  "Y8888  888 888  888  "Y88P"  888'
+$logo0 = '888b     d888          d888   888       .d8888b.'
+$logo1 = '8888b   d8888         d8888   888      d88P  Y88b'
+$logo2 = '88888b.d88888           888   888      888    888'
+$logo3 = '888Y88888P888  .d88b.   888   888  888 888    888 888d888'
+$logo4 = '888 Y888P 888 d8P  Y8b  888   888 .88P 888    888 888P"'
+$logo5 = '888  Y8P  888 88888888  888   888888K  888    888 888'
+$logo6 = '888   "   888 Y8b.      888   888 "88b Y88b  d88P 888'
+$logo7 = '888       888  "Y8888 8888888 888  888  "Y8888P"  888'
 $underline = "-" * $logo7.length
 
 $uptime = Get-Uptime

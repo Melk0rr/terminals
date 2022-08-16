@@ -9,14 +9,14 @@ echo -e "
 \033[0;35m +MMsohNMMMMMMMMMMMMMm/
 \033[0;35m .My   .+dMMMMMMMMMMMMMh.
 \033[0;35m  +       :NMMMMMMMMMMMMNo
-\033[0;35m           \`yMMMMMMMMMMMMMm:                \033[0;33m888b     d888          888 888
-\033[0;35m             /NMMMMMMMMMMMMMy\`              \033[0;33m8888b   d8888          888 888
-\033[0;35m              .hMMMMMMMMMMMMMN+             \033[0;33m88888b.d88888          888 888
-\033[0;35m                  \`\`-NMMMMMMMMMd-           \033[0;33m888Y88888P888  .d88b.  888 888  888  .d88b.  888d888
-\033[0;35m                     /MMMMMMMMMMMs\`         \033[0;33m888 Y888P 888 d8P  Y8b 888 888 .88P d88\"\"88b 888P\"
-\033[0;35m                      mMMMMMMMsyNMN/        \033[0;33m888  Y8P  888 88888888 888 888888K  888  888 888
-\033[0;35m                      +MMMMMMMo  :sNh.      \033[0;33m888   \"   888 Y8b.     888 888 \"88b Y88..88P 888
-\033[0;35m                      \`NMMMMMMm     -o/     \033[0;33m888       888  \"Y8888  888 888  888  \"Y88P\"  888
+\033[0;35m           \`yMMMMMMMMMMMMMm:                \033[0;33m888b     d888          d888   888       .d8888b.
+\033[0;35m             /NMMMMMMMMMMMMMy\`              \033[0;33m8888b   d8888         d8888   888      d88P  Y88b
+\033[0;35m              .hMMMMMMMMMMMMMN+             \033[0;33m88888b.d88888           888   888      888    888
+\033[0;35m                  \`\`-NMMMMMMMMMd-           \033[0;33m888Y88888P888  .d88b.   888   888  888 888    888 888d888
+\033[0;35m                     /MMMMMMMMMMMs\`         \033[0;33m888 Y888P 888 d8P  Y8b  888   888 .88P 888    888 888P\"
+\033[0;35m                      mMMMMMMMsyNMN/        \033[0;33m888  Y8P  888 88888888  888   888888K  888    888 888
+\033[0;35m                      +MMMMMMMo  :sNh.      \033[0;33m888   \"   888 Y8b.      888   888 \"88b Y88b  d88P 888
+\033[0;35m                      \`NMMMMMMm     -o/     \033[0;33m888       888  \"Y8888 8888888 888  888  \"Y8888P\"  888
 \033[0;35m                       oMMMMMMM.            \033[0;37m---------------------------
 \033[0;35m                       \`NMMMMMM+            \033[0;35m$USER\033[0;37m@\033[0;35m$HOSTNAME
 \033[0;35m                        +MMd/NMh            \033[0;35mOS\033[0;37m: Kali GNU/Linux Rolling WSL

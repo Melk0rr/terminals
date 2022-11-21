@@ -1,0 +1,16 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    "python.defaultInterpreterPath": "C:\\Users\\lalle\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "C_Cpp.default.compilerPath": "C:\\ProgramData\\chocolatey\\lib\\mingw\\tools\\install\\mingw64\\bin\\g++",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+    "editor.fontFamily": "MesloLGL Nerd Font",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "python.linting.pylintArgs": [
+        "--indent-string=\"  \""
+    ],
+    "python.formatting.autopep8Args": [
+        "--indent-size=2"
+    ],
+    "python.experiments.optOutFrom": []
+}

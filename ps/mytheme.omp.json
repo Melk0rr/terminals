@@ -42,7 +42,14 @@
           "properties": {
             "style": "full",
             "home_icon": "\uf7db ",
-            "folder_separator_icon": " \uE0B1 "
+            "folder_separator_icon": " \uE0B1 ",
+            "mapped_locations": {
+              "D:\\Projets\\01_IT\\01_Dev": "📜",
+              "D:\\Projets\\01_IT\\01_Dev\\04_Python": "",
+              "D:\\Projets\\01_IT\\01_Dev\\01_C-Cpp": "",
+              "D:\\Projets\\01_IT\\01_Dev\\02_Web": "",
+              "D:\\Sapere": "📖"
+            }
           }
         },
         {
@@ -64,15 +71,15 @@
           }
         },
         {
-            "type": "exit",
-            "style": "powerline",
-            "powerline_symbol": "\uE0B0",
-            "foreground": "#fff",
-            "background": "#910000",
-            "properties": {
-                "prefix": "<transparent> \uF12A</> ",
-                "template": "{{ .Text }}"
-            }
+          "type": "exit",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#fff",
+          "background": "#910000",
+          "properties": {
+            "prefix": "<transparent> \uF12A</> ",
+            "template": "{{ .Text }}"
+          }
         }
       ]
     },
@@ -127,14 +134,14 @@
           "style": "plain",
           "foreground": "#ffffff",
           "foreground_templates": [
-              "{{ if gt .Code 0 }}#ff0000{{ end }}"
+            "{{ if gt .Code 0 }}#ff0000{{ end }}"
           ],
           "properties": {
-              "template": "\u276F",
-              "prefix": "",
-              "always_enabled": true
+            "template": "\u276F",
+            "prefix": "",
+            "always_enabled": true
           }
-      }
+        }
       ]
     }
   ]

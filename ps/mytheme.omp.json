@@ -44,11 +44,13 @@
             "home_icon": "\uf7db ",
             "folder_separator_icon": " \uE0B1 ",
             "mapped_locations": {
+              "D:\\Sapere": "📖",
+              "D:\\Projets\\01_IT": "💻",
               "D:\\Projets\\01_IT\\01_Dev": "📜",
-              "D:\\Projets\\01_IT\\01_Dev\\04_Python": "",
               "D:\\Projets\\01_IT\\01_Dev\\01_C-Cpp": "",
               "D:\\Projets\\01_IT\\01_Dev\\02_Web": "",
-              "D:\\Sapere": "📖"
+              "D:\\Projets\\01_IT\\01_Dev\\03_Powershell": "",
+              "D:\\Projets\\01_IT\\01_Dev\\04_Python": ""
             }
           }
         },

@@ -1,7 +1,12 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
         {
             "command": 
             {
@@ -9,10 +14,6 @@
                 "singleLine": false
             },
             "keys": "ctrl+c"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
         },
         {
             "command": "find",
@@ -31,70 +32,86 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.90000000000000002,
             "colorScheme": "One Half Dark",
             "cursorHeight": 15,
             "cursorShape": "vintage",
             "font": 
             {
                 "face": "MesloLGL Nerd Font",
-                "size": 10
+                "size": 11.0
             },
+            "opacity": 90,
             "useAcrylic": true
         },
         "list": 
         [
             {
-                "acrylicOpacity": 0.55000000000000004,
-                "colorScheme": "One Half Dark",
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+                "colorScheme": "Catppuccin Mocha",
+                "commandline": "pwsh.exe -nologo",
                 "cursorHeight": 15,
                 "cursorShape": "vintage",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
                     "face": "MesloLGL Nerd Font",
-                    "size": 10,
+                    "size": 10.0,
                     "weight": "normal"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "icon": "C:\\Program Files\\PowerShell\\7\\assets\\Powershell_av_colors.ico",
-                "intenseTextStyle": "all",
                 "name": "PowerShell",
+                "opacity": 55,
+                "padding": "8",
                 "source": "Windows.Terminal.PowershellCore",
+                "startingDirectory": "%USERPROFILE%\\Documents\\scripts",
                 "useAcrylic": true
             },
             {
-                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
-                "hidden": false,
-                "icon": "C:\\Users\\%username%\\Downloads\\kali_w.png",
-                "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\kali-linux\\home\\melkor"
-            },
-            {
-                "acrylicOpacity": 0.90000000000000002,
-                "colorScheme": "One Half Dark",
-                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "commandline": "wsl.exe -d kali-linux",
+                "cursorHeight": 15,
                 "cursorShape": "vintage",
                 "font": 
                 {
-                    "face": "MesloLGS NF",
-                    "size": 11
+                    "face": "MesloLGL Nerd Font",
+                    "size": 10.0
                 },
-                "guid": "{46b90366-e30b-4c52-8143-359fb9bbec0b}",
-                "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "guid": "{45037921-ab06-41e4-bae5-244e5a8dfdb7}",
+                "hidden": false,
+                "icon": "C:\\Users\\j.lallement\\Downloads\\kali_w.png",
+                "name": "kali-linux",
+                "opacity": 55,
+                "startingDirectory": "\\\\wsl$\\kali-linux\\home\\jlallement",
+                "useAcrylic": true
+            },
+            {
+                "colorScheme": "One Half Dark",
+                "commandline": "\"%PROGRAMFILES%\\Git\\bin\\bash.exe\" -i -l",
+                "cursorHeight": 15,
+                "cursorShape": "vintage",
+                "font": 
+                {
+                    "face": "MesloLGL Nerd Font",
+                    "size": 11.0
+                },
+                "guid": "{8f16677c-070e-419b-9e01-f3fe79b95a9f}",
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
                 "name": "Git-Bash",
+                "opacity": 90,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": true
             },
             {
-                "commandline": "cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Invite de commandes"
@@ -106,22 +123,22 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "acrylicOpacity": 0.90000000000000002,
                 "colorScheme": "One Half Dark",
-                "commandline": "powershell.exe",
                 "cursorHeight": 15,
                 "cursorShape": "vintage",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
                     "face": "MesloLGL Nerd Font",
-                    "size": 10,
+                    "size": 11.0,
                     "weight": "normal"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "intenseTextStyle": "all",
                 "name": "Windows PowerShell",
+                "opacity": 90,
+                "padding": "8",
+                "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": true
             }
         ]
@@ -173,6 +190,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
+        },
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
         },
         {
             "background": "#282C34",
@@ -336,5 +376,69 @@
             "yellow": "#808000"
         }
     ],
-    "useAcrylicInTabRow": false
+    "theme": "Catppuccin Mocha",
+    "themes": 
+    [
+        {
+            "name": "Catppuccin Mocha",
+            "tab": 
+            {
+                "background": "#1E1E2EFF",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#181825FF",
+                "unfocusedBackground": "#11111BFF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyDark",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyLight",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "system",
+                "useMica": false
+            }
+        }
+    ]
 }
